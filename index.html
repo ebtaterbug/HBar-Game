@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stickman Gymnastics Game</title>  
+    <style>
+        .button-container {
+            position: fixed; /* Fixed position relative to the viewport */
+            bottom: 10px; /* Positioned at the bottom of the viewport */
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .button-container button {
+            margin: 0 5px; /* Space between buttons */
+            padding: 10px; /* Padding inside buttons */
+            /* Additional button styling as needed */
+            font-size: 5vh;
+            height: 15vh;
+            width: 15vh;
+        }
+
+        /* Ensure the refresh button is also fixed */
+        #refreshButton {
+            position: fixed;
+            top: 10px; /* Positioned at the top of the viewport */
+            left: 10px; /* Positioned at the left of the viewport */
+        }
+        #toggleButtons {
+            position: fixed;
+            top: 10px; /* Positioned at the top of the viewport */
+            left: 100px; /* Positioned at the left of the viewport */
+        }
+    </style> 
+</head>
+<body>
+    <button id="refreshButton">Retry</button>
+    <button id="toggleButtons">Toggle Buttons</button>
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.16.0/build/matter.min.js"></script>
+    <script src="game.js"></script>
+    <script src="script.js"></script>
+    <div class="button-container">
+        <button id="right">R</button>
+        <button id="letGo">Let Go</button>
+        <button id="left">L</button>
+    </div>
+</body>
+</html>
